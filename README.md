@@ -143,4 +143,5 @@ TODO
 2. Cleanup this readmad
 2. A. Move TODOs to issues (once we have a tool that can read that)
 2. B. General refactor
+3. Process /research folder and extract insights/issues.
 
