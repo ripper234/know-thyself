@@ -1,6 +1,12 @@
 # know-thyself
 Writing game aimed to know oneself
 
+Positioning
+-----------
+This is a **daily writing game**, not a coach.
+GPT plays a minor, reflective role only. It never leads, diagnoses, or coaches.
+The primary value is showing up daily and writing.
+
 It’s about developing a game from scratch that helps with self-awareness.
 It’s composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
 
@@ -28,9 +34,12 @@ Website is modeled like xkcd. The / website is the "daily question". You can go 
 Every page is sharable to Facebook/social, but sharing is limited to the QUESTION only.
 
 Every page is a question (from a fixed pre-generated and curated list of daily questions). The user can answer.
-A user can start answering before signup. On save, they are prompted to log in.
-A user can save annonymously which doesn't really save but rather prompts them to login.
-The answer input includes a one-time placeholder text : “100% Private. Nothing is shared.” (TODO - better text that also invites, not just warns)
+
+Users can start answering before signup.
+Answers are treated as a **local draft** until finalized.
+To keep an answer, the user must log in.
+The primary action button is **“Finalize”**. (TODO - "submit"? Something else?)
+The answer input includes a one-time placeholder text inviting writing and signaling privacy (copy TBD).
 
 Principle: A user can only answer TODAY's question, they cannot save answers to past questions.
 (This is done to do a FOMO effect and have users come back every day).
@@ -67,7 +76,10 @@ Weekly summaries may be shared publicly, and only after explicit opt-in.
 Design principle
 -----------------
 - Daily answers are fully private.
-- Public exposure, when it exists, happens only through deliberate weekly synthesis.
+- This is a daily ritual first, a social artifact second.
+- GPT feedback is intentionally minimal and non-directive.
+- Public exposure, when it exists, happens only through deliberate weekly synthesis, or via daily questions (not answers).
+
  
 Content
 -------
@@ -76,7 +88,14 @@ A) be interesting specifically to me (Ron Gross).
 B) would be suitable to post on facebook daily
 C) Would generate some compelling posts that cause 1. FB engagement 2. Website visits
 
+GenAI Usage
+-----------
+- Light reflection on finalized answers
+- Long-term continuity & growth across a user’s journey
+- Initial list of *curated* questions
+- image generated for every question
+- image generated in every weekly reflection
+
 General
 -------
 TODO
-1. Where to leverage GenAI other than (initial seeding of the curated questions + image gen per question)?
