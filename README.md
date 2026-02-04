@@ -7,30 +7,35 @@ This is a **daily writing game**, not a coach.
 The primary value is showing up daily and writing.
 GPT, when present, plays a minor reflective role only.
 
+First Principles
+----------------
+1. Spec-driven-development. Spec is THE source of truth. Perhpas to the extreme "code is not stored in store control (other than as a cache)".
+1. A. TODO - research - is this feasible? Current research says "no".
+1. B. TODO - toolchain - what toolchain do I need that supports this? What's a MUST? What's OPTIONAL?
+2. MVP/v0.1 = something that I (Ron) enjoy playing with over time.
+2. A. Once I am a consistent user, I'll naturally add features and improve.
+2. B. MVP/v1.0 = something X other users try out (A) and convert to weekly users (B)   
+
+Tooling
+-------
+1. Github *documentation* as source of truth
+2. Copy-paste Readme.md to ChatGPT. Generate diffs and apply (manually/automatically)
+
+TODO
+
+1. Must find tooling that read the entire repo and apply diffs. Clawdbot? 
+1. A. Define spec of tooling. (Warning - don't get too recurive here! Only as needed. Tooling is a moving target.)
+
 User-facing message (unlogged homepage)
  --------------------------------------
  "A private daily writing game."
  "No points. No winners."
  "Show up. Write honestly. Notice what’s there."
  
-
 It’s composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
 
 We’ll start with a bank of 30 questions.
 The game will take place in Hebrew (future instances might be in other languages).
-
-
-TODO
-* Project Name
-* Define Purpose
-  * Make something I enjoy playing in v0.1 + iterate on
-  * Slowly add features to attract other users
-* Should I market it first?
-  * Purpose: to find early users
-  * Post on Facebook
-  * Prep Google Form
-  * Open whatsapp/facebook group?
-
 
 Spec
 ----
@@ -120,14 +125,19 @@ KPIs:
 
 
 TODO
-- Open whatsapp group
-- Write first blog post
-- Review it
-- Decide on a posting frequency (after every major work chunk/day or weekly)
-- Discuss it in therapy (conflicting needs. "build in public" vs "don't overhype/spread yourself thin - build first")
-- Post it
+- First post
+  - Decide on conditions for first post
+  - Discuss it in therapy (conflicting needs. "build in public" vs "don't overhype/spread yourself thin - build first")
+  - Open whatsapp group
+  - Write first blog post
+  - Review it
+  - Decide on a posting frequency (after every major work chunk/day or weekly)
+  - Post it
+- Getting info from users (forms/polls/when/what)
 
 
 General
 -------
 TODO
+1. Find a name & domain for the project.
+2. 
