@@ -7,6 +7,9 @@ This is a **daily writing game**, not a coach.
 GPT plays a minor, reflective role only. It never leads, diagnoses, or coaches.
 The primary value is showing up daily and writing.
 
+A message to the user:
+"This is a solo game without points or winners. You play by showing up, writing honestly, and noticing what’s there."
+
 It’s about developing a game from scratch that helps with self-awareness.
 It’s composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
 
@@ -79,8 +82,13 @@ Design principle
 - This is a daily ritual first, a social artifact second.
 - GPT feedback is intentionally minimal and non-directive.
 - Public exposure, when it exists, happens only through deliberate weekly synthesis, or via daily questions (not answers).
+- Insight is revealed through momentum and patterns, never through judgment or scoring.
 
- 
+Design guardrail
+----------------
+- Any feature that introduces points, rankings, grading, or comparative evaluation violates the core game.
+- Progress is expressed only through continuity, reflection, and pattern recognition over time.
+
 Content
 -------
 TODO: What content would
