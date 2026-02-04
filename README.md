@@ -101,6 +101,24 @@ GenAI Usage
 - image generated for every question
 - image generated in every weekly reflection
 
+Marketing
+---------
+[Post archive](https://docs.google.com/spreadsheets/d/1te47y6NYfcjiwMXVgDrriqWn9GKFGxyyIkgssbBqlBA/edit?gid=0#gid=0)
+
+Posting flow:
+1. Post to Facebook
+2. Add link to archive
+3. Post link to Whatsapp group
+
+TODO
+- Open whatsapp group
+- Write first blog post
+- Review it
+- Decide on a posting frequency (after every major work chunk/day or weekly)
+- Discuss it in therapy (conflicting needs. "build in public" vs "don't overhype/spread yourself thin - build first")
+- Post it
+
+
 General
 -------
 TODO
