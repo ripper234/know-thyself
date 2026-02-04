@@ -1,3 +1,10 @@
+
+Most Important Tasks:
+1. Write questions
+2. Choose who to invite (DM)
+3. Prep the bot.
+
+
 # know-thyself
 Writing game aimed to know oneself
 
@@ -144,4 +151,5 @@ TODO
 2. A. Move TODOs to issues (once we have a tool that can read that)
 2. B. General refactor
 3. Process /research folder and extract insights/issues.
-
+4. Generate candidate first 30 questions. Brainstorm style/prompt first. Hebrew.
+5. 
