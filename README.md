@@ -4,13 +4,16 @@ Writing game aimed to know oneself
 Positioning
 -----------
 This is a **daily writing game**, not a coach.
-GPT plays a minor, reflective role only. It never leads, diagnoses, or coaches.
 The primary value is showing up daily and writing.
+GPT, when present, plays a minor reflective role only.
 
-A message to the user:
-"This is a solo game without points or winners. You play by showing up, writing honestly, and noticing what’s there."
+User-facing message (unlogged homepage)
+ --------------------------------------
+ "A private daily writing game."
+ "No points. No winners."
+ "Show up. Write honestly. Notice what’s there."
+ 
 
-It’s about developing a game from scratch that helps with self-awareness.
 It’s composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
 
 We’ll start with a bank of 30 questions.
@@ -76,18 +79,12 @@ The user may explicitly opt-in to make a weekly summary public. This opt-in is a
 
 Weekly summaries may be shared publicly, and only after explicit opt-in.
 
-Design principle
------------------
-- Daily answers are fully private.
-- This is a daily ritual first, a social artifact second.
-- GPT feedback is intentionally minimal and non-directive.
-- Public exposure, when it exists, happens only through deliberate weekly synthesis, or via daily questions (not answers).
-- Insight is revealed through momentum and patterns, never through judgment or scoring.
+Internal contract (design / dev)
+--------------------------------
+- This is a solo daily game, not coaching. Insight comes from repetition and patterns, never from judgment, scoring, or comparison.
+- Privacy is the default and the rule. Daily answers are sacred; sharing happens only through deliberate synthesis or questions.
+- GPT is a mirror, not an authority. It may reflect continuity or patterns, but never evaluate, praise, direct, or rank.
 
-Design guardrail
-----------------
-- Any feature that introduces points, rankings, grading, or comparative evaluation violates the core game.
-- Progress is expressed only through continuity, reflection, and pattern recognition over time.
 
 Content
 -------
