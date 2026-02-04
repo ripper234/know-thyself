@@ -1,5 +1,4 @@
-
-Most Important Tasks:
+# Most Important Tasks:
 1. Write questions
 2. Choose who to invite (DM)
 3. Prep the bot.
