@@ -110,6 +110,15 @@ Posting flow:
 2. Add link to archive
 3. Post link to Whatsapp group
 
+KPIs:
+1. Setup reminder/agent to measure these!
+2. Setup monthly/quarterly goals
+3. Metrics:
+3. A. Engagement on Facebook
+4. B. Whatsapp group user count
+5. C. Website metrics - TODO
+
+
 TODO
 - Open whatsapp group
 - Write first blog post
