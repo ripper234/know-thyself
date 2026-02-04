@@ -140,4 +140,7 @@ General
 -------
 TODO
 1. Find a name & domain for the project.
-2. 
+2. Cleanup this readmad
+2. A. Move TODOs to issues (once we have a tool that can read that)
+2. B. General refactor
+
