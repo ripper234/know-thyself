@@ -43,9 +43,11 @@ It’s composed of daily questions or prompts. Each prompt encourages the user t
 We’ll start with a bank of 30 questions.
 The game will take place in Hebrew (future instances might be in other languages).
 
-Spec
-----
+Product
+-------
 
+Website
+-------
 Website is modeled like xkcd. The / website is the "daily question". You can go back/forward to view past questions. URL structure models XKCD (https://xkcd.com/3197/).
 
 Every page is sharable to Facebook/social, but sharing is limited to the QUESTION only.
@@ -71,6 +73,17 @@ TODO - should the full text of the question be posted, or just a teaser - enough
 
 Every question has a unique image generated that captures the essence of the question in a unique way.
 Conductive to sharing it on Facebook.
+
+Leaderboard
+----------
+The metric is presence.
+2 Leaderboards
+- Username / Total Days
+- Username / Streak
+
+(TODO - maybe merger these into one)
+TODO what's the priority of this?
+
 
 Login
 ------
