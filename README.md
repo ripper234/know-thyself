@@ -1,5 +1,7 @@
 # Most Important Tasks:
 1. Write questions
+1. a. questions are indeed fixed? daily changinh for everyone? every user gets a fixed onboarding? tailored to user? (I think not. curated brats tailored. maybe)
+2. b. guideline to generate questionS. review with Anat.
 2. Choose who to invite (DM)
 3. Prep Whatsapp bot to run the game via Group and/or DMs (via Dopamine?).
 
