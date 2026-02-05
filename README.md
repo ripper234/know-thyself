@@ -1,7 +1,7 @@
 # Most Important Tasks:
 1. Write questions
 2. Choose who to invite (DM)
-3. Prep the bot.
+3. Prep Whatsapp bot to run the game via Group and/or DMs (via Dopamine?).
 
 
 # know-thyself
