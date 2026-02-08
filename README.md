@@ -167,3 +167,9 @@ TODO
 3. Process /research folder and extract insights/issues.
 4. Generate candidate first 30 questions. Brainstorm style/prompt first. Hebrew.
 5. Consider evidence for mixed results for writing ex (see research). Should that influence our prompts? positive only???
+
+See also
+--------
+[Stoic app](https://apps.apple.com/us/app/stoic-journal-mental-health/id1312926037)
+
+
