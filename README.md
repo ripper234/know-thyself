@@ -1,4 +1,5 @@
 # Most Important Tasks:
+0. Brainstorm - is this a single player game? Or multiplayer? Buddy/group system? That could have huge value. (See also my previous attempt at multiplayer writing - [Groupwrite](https://github.com/groupwrite-io/groupwrite.io))
 1. Write questions. See *Content* section.
 1. a. questions are indeed fixed? daily changing for everyone? every user gets a fixed onboarding? tailored to user? (I think not. curated brats tailored. maybe)
 2. b. guideline to generate questionS. review with Anat.
