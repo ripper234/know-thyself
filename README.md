@@ -23,6 +23,7 @@ First Principles
 2. MVP/v0.1 = something that I (Ron) enjoy playing with over time.
 2. A. Once I am a consistent user, I'll naturally add features and improve.
 2. B. MVP/v1.0 = something X other users try out (A) and convert to weekly users (B)   
+2. C. *Build in private* until the practice is embodied. No public launch until I have submitted 14 days, the flow feels boringly stable, and I have missed a day and returned.
 
 Tooling
 -------
