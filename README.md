@@ -84,9 +84,15 @@ The metric is presence.
 - Username / Total Days
 - Username / Streak
 
-(TODO - maybe merger these into one)
-TODO what's the priority of this?
+*Definition*
+Presence = user clicks “Finalize” on TODAY’s question.
+Drafting does not count. Reading does not count. Only "Finalize" counts.
 
+*Global Presence Indicator*
+- Display: "X people showed up today."     (total number of players who submitted today) 
+- Optional 30-day sparkline chart of total daily submissions.
+- No public ranking of answers.
+- No usernames shown globally. Only each user sees their own Total Days Submitted and Current Streak.
 
 Login
 ------
