@@ -15,6 +15,11 @@ This is a **daily writing game**, not a coach.
 The primary value is showing up daily and writing.
 GPT, when present, plays a minor reflective role only.
 
+Directory Structure
+-------------------
+- README.md - main entry point
+- content/guidelines.md - guidelines to generating content
+
 First Principles
 ----------------
 1. Spec-driven-development. Spec is THE source of truth. Perhpas to the extreme "code is not stored in store control (other than as a cache)".
