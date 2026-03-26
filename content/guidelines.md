@@ -329,6 +329,8 @@ Re-traumatization is not.
 
 Prompts should invite reflection, not exposure.
 
+Evidence basis: expressive-writing research shows mixed or negative outcomes when prompts push stressful disclosure (see `research/gpt-research-4-2-26`). Bias the prompt bank—especially the first 30—toward observation, values, and gratitude.
+
 
 ---
 
