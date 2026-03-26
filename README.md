@@ -37,9 +37,6 @@ Tooling
 
 TODO
 
-1. Must find tooling that read the entire repo and apply diffs. Clawdbot? 
-1. A. Define spec of tooling. (Warning - don't get too recurive here! Only as needed. Tooling is a moving target.)
-
 User-facing message (unlogged homepage)
  --------------------------------------
  "A private daily writing game."
