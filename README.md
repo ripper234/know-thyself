@@ -66,7 +66,7 @@ The primary action button is **“Finalize”**. (TODO - "submit"? Something els
 The answer input includes a one-time placeholder text inviting writing and signaling privacy (copy TBD).
 
 Principle: A user can only answer TODAY's question, they cannot save answers to past questions.
-(This is done to do a FOMO effect and have users come back every day).
+(This encourages daily presence — the core practice.)
 
 TODO: What flavor would the upvote mechanism have? (plus, thumb up, a unique icon...)
 
