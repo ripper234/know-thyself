@@ -1,6 +1,6 @@
 # Most Important Tasks:
 1. Write questions. See *Content* section.
-1. a. questions are indeed fixed? daily changing for everyone? every user gets a fixed onboarding? tailored to user? (I think not. curated brats tailored. maybe)
+1. a. questions are indeed fixed? daily changing for everyone? every user gets a fixed onboarding? tailored to user? (I think not. curated batches tailored. maybe)
 2. b. guideline to generate questionS. review with Anat.
 2. Choose who to invite (DM)
 3. Prep Whatsapp bot to run the game via Group and/or DMs (via Dopamine?).
@@ -66,7 +66,7 @@ The primary action button is **“Finalize”**. (TODO - "submit"? Something els
 The answer input includes a one-time placeholder text inviting writing and signaling privacy (copy TBD).
 
 Principle: A user can only answer TODAY's question, they cannot save answers to past questions.
-(This is done to do a FOMO effect and have users come back every day).
+(This encourages daily presence — the core practice.)
 
 TODO: What flavor would the upvote mechanism have? (plus, thumb up, a unique icon...)
 
