@@ -12,8 +12,6 @@ Should “learn something new” be reframed as “increase self-clarity over ti
 
 Is fallback free-writing philosophically equal to prompt-writing?
 
-~~Do we need clearer emotional safety guardrails?~~ ✅ Resolved — see *Emotional Guardrails* section (research-grounded, observation/values/gratitude bias added).
-
 If structure conflicts with flow, does flow win?
 
 
