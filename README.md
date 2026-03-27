@@ -33,9 +33,7 @@ First Principles
 Tooling
 -------
 1. Github *documentation* as source of truth
-2. Copy-paste Readme.md to ChatGPT. Generate diffs and apply (manually/automatically)
-
-TODO
+2. [tiny-pr-bot](https://github.com/ripper234/tiny-pr-bot) proposes spec improvements via automated PRs
 
 User-facing message (unlogged homepage)
  --------------------------------------
