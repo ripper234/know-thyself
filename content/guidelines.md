@@ -327,7 +327,7 @@ Emotional destabilization without consent
 Depth is welcome.
 Re-traumatization is not.
 
-Prompts should invite reflection, not exposure.
+Prompts should invite reflection, not exposure. Default bias toward observation, values, and gratitude.
 
 
 ---
