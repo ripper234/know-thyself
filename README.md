@@ -1,6 +1,6 @@
 # Most Important Tasks:
 1. Write questions. See *Content* section.
-1. a. questions are indeed fixed? daily changing for everyone? every user gets a fixed onboarding? tailored to user? (I think not. curated batches tailored. maybe)
+1. a. ✅ Resolved: fixed daily question, same for everyone, no per-user onboarding (see `content/guidelines.md` — Standalone Design).
 2. b. guideline to generate questionS. review with Anat.
 2. Choose who to invite (DM)
 3. Prep Whatsapp bot to run the game via Group and/or DMs (via Dopamine?).
