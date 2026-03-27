@@ -329,6 +329,8 @@ Re-traumatization is not.
 
 Prompts should invite reflection, not exposure.
 
+Research backs this up: forced stressful disclosure can backfire (see `research/gpt-research-4-2-26`). Favor observation, values, and gratitude early on.
+
 
 ---
 
