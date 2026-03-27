@@ -327,7 +327,7 @@ Emotional destabilization without consent
 Depth is welcome.
 Re-traumatization is not.
 
-Prompts should invite reflection, not exposure.
+Prompts should invite reflection, not exposure. Default bias toward observation, values, and gratitude.
 
 Research backs this up: forced stressful disclosure can backfire (see `research/gpt-research-4-2-26`). Favor observation, values, and gratitude early on.
 
