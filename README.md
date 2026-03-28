@@ -19,6 +19,8 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- marketing/blog/ - draft blog posts
+- research/ - GPT research and references
 
 First Principles
 ----------------
