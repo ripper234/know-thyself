@@ -75,7 +75,7 @@ Sharing never includes answer content. Shared posts include the question and the
 TODO - should the full text of the question be posted, or just a teaser - enough to make users click?
 
 Every question has a unique image generated that captures the essence of the question in a unique way.
-Conductive to sharing it on Facebook.
+Conducive to sharing it on Facebook.
 
 Leaderboard
 ----------
