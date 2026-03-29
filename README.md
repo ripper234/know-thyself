@@ -1,5 +1,5 @@
 # know-thyself
-Writing game aimed to know oneself
+Writing game aimed to know oneself better with daily bite size questions, answerable in 2-3 minutes.
 
 Positioning
 -----------
