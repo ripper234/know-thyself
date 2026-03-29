@@ -374,9 +374,9 @@ The product will launch in Hebrew.
 
 During development, prompts may be drafted in English.
 
-TODO — Define Hebrew Crafting Process
+⚠️ BLOCKING — Define Hebrew Crafting Process (see issue #25)
 
-Before public launch, define a repeatable method for crafting Hebrew prompts:
+Before writing the 30-question seed bank, define a repeatable method for crafting Hebrew prompts:
 
 Tone calibration
 
