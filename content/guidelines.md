@@ -10,8 +10,6 @@ Are Identity / Meaning / Patterns sufficiently differentiated?
 
 Should “learn something new” be reframed as “increase self-clarity over time”?
 
-Is fallback free-writing philosophically equal to prompt-writing?
-
 If structure conflicts with flow, does flow win?
 
 
