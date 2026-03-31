@@ -120,7 +120,6 @@ TODO:
 1. A) be interesting specifically to me (Ron Gross).
 1. B) would be suitable to post on facebook daily
 1. C) Would generate some compelling posts that cause 1. FB engagement 2. Website visits
-2. Question and expected answer length - we probablly want some variablity. Some really short, some longer / in depth. Should it be random? Should we engineer it? Inspiration: The Unfu*k Yourself calendar by Gary John Bishop.
 
 GenAI Usage
 -----------
