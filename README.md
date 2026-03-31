@@ -163,11 +163,11 @@ General
 -------
 TODO
 1. Find a name & domain for the project.
-2. Cleanup this readmad
-2. A. Move TODOs to issues (once we have a tool that can read that)
+2. Cleanup this readme
+2. A. Move remaining TODOs to issues — partially done, continuing via tiny-pr-bot
 2. B. General refactor
 3. Process /research folder and extract insights/issues.
-4. Generate candidate first 30 questions. Brainstorm style/prompt first. Hebrew.
+4. ~~Generate candidate first 30 questions.~~ → tracked in [#21](https://github.com/ripper234/know-thyself/issues/21) + [#25](https://github.com/ripper234/know-thyself/issues/25) (BLOCKING)
 5. Consider evidence for mixed results for writing ex (see research). Should that influence our prompts? positive only???
 6. Should the game pivot to or include elements of [Nomic](https://en.wikipedia.org/wiki/Nomic)? Perhaps with some AI players? It's an entirely different game. But maybe it can retain a simple core for people who just want to answer questions. Not for v0.
 
