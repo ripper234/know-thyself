@@ -16,7 +16,7 @@ Directory Structure
 
 First Principles
 ----------------
-1. Spec-driven-development. Spec is THE source of truth. Perhaps to the extreme "code is not stored in store control (other than as a cache)".
+1. Spec-driven-development. Spec is THE source of truth. Perhaps to the extreme "code is not stored in source control (other than as a cache)".
 1. A. TODO - research - is this feasible? Current research says "no".
 1. B. TODO - toolchain - what toolchain do I need that supports this? What's a MUST? What's OPTIONAL?
 2. MVP/v0.1 = something that I (Ron) enjoy playing with over time.
