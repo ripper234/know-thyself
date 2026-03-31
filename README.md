@@ -128,7 +128,6 @@ TODO:
 1. A) be interesting specifically to me (Ron Gross).
 1. B) would be suitable to post on facebook daily
 1. C) Would generate some compelling posts that cause 1. FB engagement 2. Website visits
-2. ✅ Resolved: question length variability defined in `content/guidelines.md` — 90% short (8–16 words), 10% optional deep dive.
 
 GenAI Usage
 -----------
