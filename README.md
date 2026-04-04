@@ -143,8 +143,8 @@ KPIs:
 2. Setup monthly/quarterly goals
 3. Metrics:
 3. A. Engagement on Facebook
-4. B. Whatsapp group user count
-5. C. Website metrics - TODO
+3. B. Whatsapp group user count
+3. C. Website metrics - TODO
 
 
 TODO
