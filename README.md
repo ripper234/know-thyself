@@ -115,11 +115,8 @@ Internal contract (design / dev)
 
 Content
 -------
-TODO:
-1. What content would
-1. A) be interesting specifically to me (Ron Gross).
-1. B) would be suitable to post on facebook daily
-1. C) Would generate some compelling posts that cause 1. FB engagement 2. Website visits
+Prompt-generation rules live in [content/guidelines.md](content/guidelines.md).
+Private usefulness comes first; public shareability applies to the question only, never the answer.
 
 GenAI Usage
 -----------

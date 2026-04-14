@@ -330,6 +330,19 @@ Research backs this up: forced stressful disclosure can backfire (see `research/
 
 ---
 
+Public-Share Filter
+
+Because the question itself may be shared publicly, every prompt must also pass this filter:
+
+- Safe to publish as a standalone question card
+- Invites curiosity or recognition, not confession pressure
+- Never implies the answer itself should be shared
+
+Shareability is a bonus, not the primary goal. Private usefulness comes first.
+
+
+---
+
 Presence Philosophy
 
 A day counts only when the user clicks “Finalize.”
