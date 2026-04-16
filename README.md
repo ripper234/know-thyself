@@ -74,9 +74,9 @@ Conducive to sharing it on Facebook.
 Leaderboard
 ----------
 The metric is presence.
-2 Leaderboards
-- Username / Total Days
-- Username / Streak
+2 private progress counters
+- Total Days Submitted
+- Current Streak
 
 *Definition*
 Presence = user clicks “Finalize” on TODAY’s question.
