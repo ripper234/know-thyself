@@ -164,7 +164,7 @@ TODO
 2. A. Move remaining TODOs to issues — partially done, continuing via tiny-pr-bot
 2. B. General refactor
 3. Process /research folder and extract insights/issues.
-4. ~~Generate candidate first 30 questions.~~ → tracked in [#21](https://github.com/ripper234/know-thyself/issues/21) + [#25](https://github.com/ripper234/know-thyself/issues/25) (BLOCKING)
+4. Draft first 30 questions in English working copy → [content/seed-bank-draft-en.md](content/seed-bank-draft-en.md) + [#25](https://github.com/ripper234/know-thyself/issues/25) (Hebrew crafting still blocking launch copy)
 5. Should the game pivot to or include elements of [Nomic](https://en.wikipedia.org/wiki/Nomic)? Perhaps with some AI players? It's an entirely different game. But maybe it can retain a simple core for people who just want to answer questions. Not for v0.
 
 See also
