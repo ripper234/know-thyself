@@ -17,11 +17,11 @@ Directory Structure
 First Principles
 ----------------
 1. Spec-driven-development. Spec is THE source of truth. Perhaps to the extreme "code is not stored in source control (other than as a cache)".
-1. A. TODO - research - is this feasible? Current research says "no".
-1. B. TODO - toolchain - what toolchain do I need that supports this? What's a MUST? What's OPTIONAL?
+1. A. Research verdict: pure spec-generates-code is not feasible today. The spec remains the *authority* but code lives in source control normally.
+1. B. Toolchain: MUST — GitHub (docs + code), static site generator or lightweight framework, auth provider. OPTIONAL — CI/CD, CDN, image generation pipeline. Detailed toolchain choices deferred to implementation phase.
 2. MVP/v0.1 = something that I (Ron) enjoy playing with over time.
 2. A. Once I am a consistent user, I'll naturally add features and improve.
-2. B. MVP/v1.0 = something X other users try out (A) and convert to weekly users (B)   
+2. B. MVP/v1.0 = something X other users try out (A) and convert to weekly users (B)
 2. C. *Build in private* until the practice is embodied. No public launch until I have submitted 14 days, the flow feels boringly stable, and I have missed a day and returned.
 
 Tooling
@@ -33,11 +33,11 @@ User-facing message (unlogged homepage)
  --------------------------------------
  "A private daily writing game."
  "No points. No winners."
- "Show up. Write honestly. Notice what’s there."
- 
-It’s composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
+ "Show up. Write honestly. Notice what's there."
 
-We’ll start with a bank of 30 questions.
+It's composed of daily questions or prompts. Each prompt encourages the user to complete a short writing exercise. The exercise should be short, doable, the user should learn something about themselves.
+
+We'll start with a bank of 30 questions.
 The game will take place in Hebrew (future instances might be in other languages).
 
 Product
@@ -54,19 +54,20 @@ Every page is a question (from a fixed pre-generated and curated list of daily q
 Users can start answering before signup.
 Answers are treated as a **local draft** until finalized.
 To keep an answer, the user must log in.
-The primary action button is **“Finalize”**. (TODO - "submit"? Something else?)
-The answer input includes a one-time placeholder text inviting writing and signaling privacy (copy TBD).
+The primary action button is **"סיימתי"** ("I'm done"). This signals completion without judgment — no "submit" (too formal), no "finalize" (too corporate). The act of clicking is the practice.
+The answer input includes a one-time placeholder text inviting writing and signaling privacy. Draft: *"הכתיבה פרטית. אף אחד לא רואה מה שאתה כותב כאן."* ("The writing is private. No one sees what you write here.")
 
 Principle: A user can only answer TODAY's question, they cannot save answers to past questions.
-(This encourages daily presence — the core practice.)
+(This encourages daily presence - the core practice.)
 
-TODO: What flavor would the upvote mechanism have? (plus, thumb up, a unique icon...)
+There is no upvote mechanism. Upvotes imply ranking and audience, which conflicts with the non-competitive core. The only interaction with a question is:
+- **Star (☆)** — save a question to your personal favorites. Private, never aggregated publicly.
 
-A user can favorite (star) specific questions (from others & their own). They can access all questions they favorited.
+A user can star specific questions. They can access all questions they starred.
 
 Sharing never includes answer content. Shared posts include the question and the unique question graphics. We let the user add their own thoughts (or not).
 
-TODO - should the full text of the question be posted, or just a teaser - enough to make users click?
+Shared posts show the **full question text** plus the unique question image. The question itself is the hook — hiding it behind a teaser adds clickbait energy that conflicts with the direct, honest tone. The answer is never shared.
 
 Every question has a unique image generated that captures the essence of the question in a unique way.
 Conducive to sharing it on Facebook.
@@ -74,25 +75,25 @@ Conducive to sharing it on Facebook.
 Leaderboard
 ----------
 The metric is presence.
-2 Leaderboards
-- Username / Total Days
-- Username / Streak
+2 private progress counters
+- Total Days Submitted
+- Current Streak
 
 *Definition*
-Presence = user clicks “Finalize” on TODAY’s question.
-Drafting does not count. Reading does not count. Only "Finalize" counts.
+Presence = user clicks "סיימתי" on TODAY's question.
+Drafting does not count. Reading does not count. Only "סיימתי" counts.
 
 *Global Presence Indicator*
-- Display: "X people showed up today."     (total number of players who submitted today) 
+- Display: "X people showed up today."     (total number of players who submitted today)
 - Optional 30-day sparkline chart of total daily submissions.
 - No public ranking of answers.
 - No usernames shown globally. Only each user sees their own Total Days Submitted and Current Streak.
 
 Login
 ------
-Via Facebook connect + Google
-TODO - is this the right choice & order?
- 
+Via Google (primary) + Facebook connect.
+Google first: broader reach, simpler flow, more trusted for privacy-sensitive products. Facebook as secondary option.
+
 Weekly Reflection
 -----------------
 At the end of every week (Friday for Israel), the user is shown a private view of their answers from the past 7 days.
@@ -121,7 +122,7 @@ Private usefulness comes first; public shareability applies to the question only
 GenAI Usage
 -----------
 - Light reflection on finalized answers
-- Long-term continuity & growth across a user’s journey
+- Long-term continuity & growth across a user's journey
 - Initial list of *curated* questions
 - image generated for every question
 - image generated in every weekly reflection
@@ -141,7 +142,7 @@ KPIs:
 3. Metrics:
 3. A. Engagement on Facebook
 3. B. Whatsapp group user count
-3. C. Website metrics - TODO
+3. C. Website metrics: daily active submitters, 7-day retention, streak distribution
 
 
 TODO
@@ -161,10 +162,10 @@ General
 TODO
 1. Find a name & domain for the project.
 2. Cleanup this readme
-2. A. Move remaining TODOs to issues — partially done, continuing via tiny-pr-bot
+2. A. Move remaining TODOs to issues - partially done, continuing via tiny-pr-bot
 2. B. General refactor
 3. Process /research folder and extract insights/issues.
-4. ~~Generate candidate first 30 questions.~~ → tracked in [#21](https://github.com/ripper234/know-thyself/issues/21) + [#25](https://github.com/ripper234/know-thyself/issues/25) (BLOCKING)
+4. ~~Generate candidate first 30 questions.~~ → First Hebrew draft in PR [#37](https://github.com/ripper234/know-thyself/pull/37). Hebrew crafting process defined, resolving [#25](https://github.com/ripper234/know-thyself/issues/25).
 5. Should the game pivot to or include elements of [Nomic](https://en.wikipedia.org/wiki/Nomic)? Perhaps with some AI players? It's an entirely different game. But maybe it can retain a simple core for people who just want to answer questions. Not for v0.
 
 See also
