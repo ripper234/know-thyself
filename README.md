@@ -10,6 +10,7 @@ GPT, when present, plays a minor reflective role only.
 Directory Structure
 -------------------
 - README.md - main entry point
+- ARCHITECTURE.md - MVP technical spec and stack decisions
 - content/guidelines.md - guidelines to generating content
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
