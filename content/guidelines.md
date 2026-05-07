@@ -385,24 +385,8 @@ The product will launch in Hebrew.
 
 During development, prompts may be drafted in English.
 
-⚠️ BLOCKING — Define Hebrew Crafting Process (see issue #25)
-
-Before writing the 30-question seed bank, define a repeatable method for crafting Hebrew prompts:
-
-Tone calibration
-
-Sentence-length rules in Hebrew
-
-Vocabulary boundaries
-
-Avoidance list (therapy jargon, academic tone, clichés)
-
-Whether prompts are written originally in Hebrew or translated
-
-Final review process before publishing
-
-
-This must be defined before launch.
+Hebrew crafting process is defined in [content/hebrew-style-guide.md](hebrew-style-guide.md) (see issue #25).
+Covers: tone calibration, sentence-length rules, vocabulary boundaries, avoidance list, authoring language, and review process.
 
 
 ---
