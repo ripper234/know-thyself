@@ -27,7 +27,6 @@ The question should feel like:
 
 It should **not** feel like:
 - a diagnosis
-- a coaching exercise
 - a slogan
 - a riddle
 - a Facebook-bait line
