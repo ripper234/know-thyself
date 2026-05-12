@@ -76,8 +76,8 @@ Prefer words from ordinary life:
 Prefer concrete language over abstraction.
 
 Prefer:
-- "מה אתה דוחה?"
-- "איפה אתה נסגר?"
+- "מה נדחה אצלך?"
+- "איפה יש נטייה להיסגר?"
 - "מה נהיה קל יותר?"
 
 Avoid:
