@@ -49,7 +49,8 @@ If a prompt needs too much framing, it is probably two prompts.
 
 - Hebrew becomes clunky fast when prompts force masculine/feminine forms.
 - Default preference: write prompts that stay natural **without gendered verb forms** when possible.
-- Ask for gender at onboarding (זכר/נקבה/אחר)
+- Ask for gender at onboarding (זכר/נקבה/אחר).
+- Always store a gender neutral version of the prompt. Can adjust on runtime to the correct gender if known.
 
 Prefer:
 - "מה קשה לך לבקש?"
