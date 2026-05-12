@@ -47,13 +47,14 @@ If a prompt needs too much framing, it is probably two prompts.
 
 ## Gender Strategy
 
-Hebrew becomes clunky fast when prompts force masculine/feminine forms.
-Default preference: write prompts that stay natural **without gendered verb forms** when possible.
+- Hebrew becomes clunky fast when prompts force masculine/feminine forms.
+- Default preference: write prompts that stay natural **without gendered verb forms** when possible.
+- Ask for gender at onboarding (זכר/נקבה/אחר)
 
 Prefer:
 - "מה קשה לך לבקש?"
-- "איפה אתה מרגיש הכי חי?" only if the masculine singular is an explicit product choice
-- impersonal or structurally neutral phrasing when it still sounds human
+- Can use specific gender if known
+- If unknown, "איפה את.ה מרגיש.ה הכי חי?" using dots inside words
 
 Avoid awkward forced neutrality that sounds bureaucratic.
 Naturalness wins.
