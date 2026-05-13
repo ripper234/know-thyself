@@ -11,6 +11,7 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/sequence-30-day.md - day-by-day order for the 30 seed prompts
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
