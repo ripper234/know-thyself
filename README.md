@@ -11,6 +11,7 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/sequence-30-day.md - day-by-day order for the 30 seed prompts
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
@@ -74,9 +75,9 @@ Conducive to sharing it on Facebook.
 Leaderboard
 ----------
 The metric is presence.
-2 Leaderboards
-- Username / Total Days
-- Username / Streak
+2 private progress counters
+- Total Days Submitted
+- Current Streak
 
 *Definition*
 Presence = user clicks “Finalize” on TODAY’s question.
