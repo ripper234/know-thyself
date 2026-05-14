@@ -1,0 +1,257 @@
+{
+  "$schema": "./prompts.schema.json",
+  "version": "v1",
+  "language": "he",
+  "description": "Canonical machine-readable prompt list for Know-Thyself v0.1. The MVP app (ARCHITECTURE.md) loads this file at build/runtime and serves day[i] on day i since launch. Source-of-truth for both prompt text and day-1-to-30 sequence. Markdown counterparts (prompts-hebrew-seed-bank-v1.md, sequence-30-day.md) are human-readable views of the same data.",
+  "design_rules": [
+    "Day 1 is light and welcoming. No fear or shame on the first day.",
+    "Days 1 to 15 avoid Fear-tagged prompts. Trust first.",
+    "Days 23 to 30 are the intentional descent. Fear and identity-edge prompts cluster here, on purpose.",
+    "Anchor days (7, 14, 21, 28) pair with the weekly reflection.",
+    "Day 30 is forward-facing, pointing into month 2 rather than just looking back.",
+    "Every prompt is gender-neutral Hebrew: no gendered pronouns or verb forms.",
+    "Every prompt should be answerable in 2 to 3 minutes."
+  ],
+  "tag_vocabulary": [
+    "Identity",
+    "Patterns",
+    "Emotions",
+    "Habits",
+    "Values",
+    "Relationships",
+    "Fears",
+    "Meaning"
+  ],
+  "category_vocabulary": ["unique", "evergreen"],
+  "prompts": [
+    {
+      "day": 1,
+      "seed_id": 24,
+      "category": "evergreen",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "מתי הכי נוח לך בתוך עצמך?",
+      "note": "Day 1: soft, inviting, no shame."
+    },
+    {
+      "day": 2,
+      "seed_id": 3,
+      "category": "unique",
+      "tags": ["Identity", "Habits"],
+      "text_he": "מה נהיה קל יותר בשבילך לאחרונה?",
+      "note": "Positive momentum on day 2."
+    },
+    {
+      "day": 3,
+      "seed_id": 11,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "מה נעשה אצלך לאחרונה על אוטומט?"
+    },
+    {
+      "day": 4,
+      "seed_id": 8,
+      "category": "unique",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "איזה חלק ביום שלך מרגיש הכי אמיתי?"
+    },
+    {
+      "day": 5,
+      "seed_id": 10,
+      "category": "unique",
+      "tags": ["Emotions", "Values"],
+      "text_he": "איזה צורך שלך קיבל הכי מעט מקום השבוע?",
+      "note": "Opens emotion register gently."
+    },
+    {
+      "day": 6,
+      "seed_id": 22,
+      "category": "evergreen",
+      "tags": ["Values", "Identity"],
+      "text_he": "מה באמת חשוב לך יותר ממה שנראה כלפי חוץ?",
+      "note": "First values prompt, anchor before weekly."
+    },
+    {
+      "day": 7,
+      "seed_id": 23,
+      "category": "evergreen",
+      "tags": ["Patterns"],
+      "text_he": "איזה דפוס חוזר אצלך?",
+      "anchor_day": true,
+      "note": "Anchor day. Pairs with the first weekly reflection."
+    },
+    {
+      "day": 8,
+      "seed_id": 17,
+      "category": "unique",
+      "tags": ["Identity", "Emotions"],
+      "text_he": "מה הפתיע אותך בעצמך החודש?"
+    },
+    {
+      "day": 9,
+      "seed_id": 16,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "מה ממשיך להיסחב רק מתוך הרגל?"
+    },
+    {
+      "day": 10,
+      "seed_id": 14,
+      "category": "unique",
+      "tags": ["Emotions", "Values"],
+      "text_he": "מתי הרגשת קנאה, ועל מה היא הצביעה?",
+      "note": "First heavier prompt: jealousy as signal."
+    },
+    {
+      "day": 11,
+      "seed_id": 4,
+      "category": "unique",
+      "tags": ["Values", "Patterns"],
+      "text_he": "לאן הולכת לך אנרגיה על דברים פחות חשובים?"
+    },
+    {
+      "day": 12,
+      "seed_id": 27,
+      "category": "evergreen",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "איזה הרגל עוזר לך, ואיזה רק מרגיע אותך?",
+      "note": "Help-vs-comfort distinction."
+    },
+    {
+      "day": 13,
+      "seed_id": 21,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "איזה רגע היום ביקש ממך לעצור, ולא עצרת?"
+    },
+    {
+      "day": 14,
+      "seed_id": 28,
+      "category": "evergreen",
+      "tags": ["Meaning", "Values"],
+      "text_he": "מה נותן לך תחושת משמעות גם בלי הכרה?",
+      "anchor_day": true,
+      "note": "Anchor day. Meaning without recognition."
+    },
+    {
+      "day": 15,
+      "seed_id": 2,
+      "category": "unique",
+      "tags": ["Emotions", "Patterns"],
+      "text_he": "איזה רגע קטן מהשבוע לא יוצא לך מהראש?"
+    },
+    {
+      "day": 16,
+      "seed_id": 7,
+      "category": "unique",
+      "tags": ["Values", "Habits"],
+      "text_he": "על מה נאמר \"אין לי זמן\" כשבעצם אין רצון?"
+    },
+    {
+      "day": 17,
+      "seed_id": 12,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איפה יש נטייה להתקטן כדי שיהיה פשוט יותר?"
+    },
+    {
+      "day": 18,
+      "seed_id": 25,
+      "category": "evergreen",
+      "tags": ["Relationships", "Emotions"],
+      "text_he": "מה קשה לך לתת לעצמך, אבל קל לבקש מאחרים?"
+    },
+    {
+      "day": 19,
+      "seed_id": 13,
+      "category": "unique",
+      "tags": ["Emotions", "Patterns"],
+      "text_he": "מה ביקשת מעצמך השבוע שהיה לא הוגן?"
+    },
+    {
+      "day": 20,
+      "seed_id": 20,
+      "category": "unique",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "מה כבר לא מתאים לך עכשיו?",
+      "note": "Preps for end-of-month."
+    },
+    {
+      "day": 21,
+      "seed_id": 29,
+      "category": "evergreen",
+      "tags": ["Identity", "Patterns"],
+      "text_he": "מה ידוע לך על עצמך היום שלא היה ידוע לפני שנה?",
+      "anchor_day": true,
+      "note": "Anchor day. Year-over-year identity."
+    },
+    {
+      "day": 22,
+      "seed_id": 9,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איזו אמת נאמרת לאחרים, וקשה לך לחיות אותה?"
+    },
+    {
+      "day": 23,
+      "seed_id": 5,
+      "category": "unique",
+      "tags": ["Fears", "Habits"],
+      "text_he": "מה ממשיך להידחות מסיבה שכבר לא רלוונטית?",
+      "note": "Start of the intentional descent. First Fear-tagged prompt."
+    },
+    {
+      "day": 24,
+      "seed_id": 19,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איזה אישור עדיין מבוקש, גם כשהוא לא נחוץ?"
+    },
+    {
+      "day": 25,
+      "seed_id": 15,
+      "category": "unique",
+      "tags": ["Patterns", "Meaning"],
+      "text_he": "איזה מחיר שקט משולם על משהו שנראה \"בסדר\"?"
+    },
+    {
+      "day": 26,
+      "seed_id": 26,
+      "category": "evergreen",
+      "tags": ["Fears", "Identity"],
+      "text_he": "מה מפחיד אותך לאבד, ומה זה אומר עליך?",
+      "note": "Heaviest evergreen, well-spaced."
+    },
+    {
+      "day": 27,
+      "seed_id": 18,
+      "category": "unique",
+      "tags": ["Relationships", "Fears"],
+      "text_he": "מה נשאר אצלך בפנים, אבל לא יוצא החוצה?"
+    },
+    {
+      "day": 28,
+      "seed_id": 6,
+      "category": "unique",
+      "tags": ["Fears", "Patterns"],
+      "text_he": "מה חשוב לך לשמור בשליטה עכשיו?",
+      "anchor_day": true,
+      "note": "Anchor day. Only anchor day with a heavier prompt, intentional as the user enters the closing week."
+    },
+    {
+      "day": 29,
+      "seed_id": 30,
+      "category": "evergreen",
+      "tags": ["Fears", "Identity"],
+      "text_he": "מה נשאר מוסתר גם מעצמך?",
+      "note": "Closing depth."
+    },
+    {
+      "day": 30,
+      "seed_id": 1,
+      "category": "unique",
+      "tags": ["Identity", "Patterns"],
+      "text_he": "מה כבר ברור לך, אבל עוד לא נאמר בקול?",
+      "note": "Forward-facing into month 2."
+    }
+  ]
+}

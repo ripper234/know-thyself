@@ -11,6 +11,9 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/prompts.json - canonical machine-readable day 1 to 30 prompt list (loaded by the MVP)
+- content/prompts.schema.json - JSON Schema for content/prompts.json
+- scripts/validate_prompts.py - validator that enforces design rules on content/prompts.json
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
