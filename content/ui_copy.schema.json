@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Know-Thyself UI Copy",
+  "description": "Schema for content/ui_copy.json. Constrains the shape and required keys so the MVP build can rely on every string existing.",
+  "type": "object",
+  "required": [
+    "version",
+    "language",
+    "description",
+    "design_rules",
+    "strings"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string", "pattern": "^v[0-9]+$" },
+    "language": { "type": "string", "enum": ["he"] },
+    "description": { "type": "string", "minLength": 1 },
+    "design_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "strings": {
+      "type": "object",
+      "required": ["app", "home", "prompt", "auth", "me", "share", "errors", "system"],
+      "additionalProperties": false,
+      "properties": {
+        "app": {
+          "type": "object",
+          "required": ["name", "tagline"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "tagline": { "type": "string", "minLength": 1 }
+          }
+        },
+        "home": {
+          "type": "object",
+          "required": ["intro_line_1", "intro_line_2", "intro_line_3"],
+          "additionalProperties": false,
+          "properties": {
+            "intro_line_1": { "type": "string", "minLength": 1 },
+            "intro_line_2": { "type": "string", "minLength": 1 },
+            "intro_line_3": { "type": "string", "minLength": 1 }
+          }
+        },
+        "prompt": {
+          "type": "object",
+          "required": [
+            "today_label",
+            "day_prefix",
+            "answer_placeholder",
+            "draft_saving",
+            "draft_saved",
+            "finalize_button",
+            "finalize_confirm",
+            "finalize_confirm_yes",
+            "finalize_confirm_no",
+            "finalized_state",
+            "readonly_past_notice",
+            "future_404_title",
+            "future_404_body"
+          ],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "auth": {
+          "type": "object",
+          "required": [
+            "login_required_before_finalize",
+            "login_with_google",
+            "logout",
+            "session_expired"
+          ],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "me": {
+          "type": "object",
+          "required": [
+            "title",
+            "total_days_label",
+            "current_streak_label",
+            "history_section_title",
+            "history_empty",
+            "history_entry_open"
+          ],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "share": {
+          "type": "object",
+          "required": ["share_question_button", "share_disclaimer"],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "errors": {
+          "type": "object",
+          "required": ["generic", "network", "save_failed", "not_today_prompt"],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        },
+        "system": {
+          "type": "object",
+          "required": ["loading", "page_not_found_title", "page_not_found_body"],
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z_]+$": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}

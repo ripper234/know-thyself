@@ -1,0 +1,68 @@
+{
+  "$schema": "./ui_copy.schema.json",
+  "version": "v1",
+  "language": "he",
+  "description": "Canonical Hebrew UI strings for the Know-Thyself MVP (v0.1). The MVP app (ARCHITECTURE.md) reads these instead of hard-coding Hebrew in code, so copy edits are spec-driven and reviewable as content. All strings are gender-neutral Hebrew. Anything user-facing that the app renders should live here.",
+  "design_rules": [
+    "Gender-neutral Hebrew. No gendered verb forms or pronouns in any string.",
+    "Tone is calm and private. No marketing voice. No exclamation marks.",
+    "Never thank, congratulate, or evaluate the user's answer. The product is a mirror, not a coach.",
+    "Streak language is informational, not gamified. No flames, no points, no 'keep it up'.",
+    "Errors are short, neutral, and never imply user fault."
+  ],
+  "strings": {
+    "app": {
+      "name": "Know Thyself",
+      "tagline": "משחק כתיבה יומי פרטי."
+    },
+    "home": {
+      "intro_line_1": "משחק כתיבה יומי פרטי.",
+      "intro_line_2": "אין ניקוד. אין מנצחים.",
+      "intro_line_3": "להופיע. לכתוב בכנות. לשים לב למה שיש."
+    },
+    "prompt": {
+      "today_label": "השאלה של היום",
+      "day_prefix": "יום",
+      "answer_placeholder": "זה רק בינך לבין עצמך. כתוב בכנות.",
+      "draft_saving": "נשמר במקומי",
+      "draft_saved": "טיוטה נשמרה",
+      "finalize_button": "סיימתי",
+      "finalize_confirm": "לסיים את התשובה ליום הזה? אי אפשר לערוך אחרי.",
+      "finalize_confirm_yes": "כן, לסיים",
+      "finalize_confirm_no": "עוד לא",
+      "finalized_state": "סיימת היום. נתראה מחר.",
+      "readonly_past_notice": "שאלה קודמת. אפשר לקרוא, לא לענות.",
+      "future_404_title": "השאלה הזאת עוד לא הגיעה.",
+      "future_404_body": "כל יום מגיעה שאלה חדשה. תחזור מחר."
+    },
+    "auth": {
+      "login_required_before_finalize": "כדי לשמור את התשובה, צריך להתחבר.",
+      "login_with_google": "התחברות עם Google",
+      "logout": "התנתקות",
+      "session_expired": "ההתחברות פגה. אפשר להתחבר שוב."
+    },
+    "me": {
+      "title": "המסך שלך",
+      "total_days_label": "ימים שסיימתי",
+      "current_streak_label": "רצף נוכחי",
+      "history_section_title": "מה כתבתי",
+      "history_empty": "עוד לא סיימת יום. השאלה הראשונה מחכה.",
+      "history_entry_open": "פתח"
+    },
+    "share": {
+      "share_question_button": "שתף את השאלה",
+      "share_disclaimer": "משותפת השאלה בלבד, בלי התשובה."
+    },
+    "errors": {
+      "generic": "משהו השתבש. אפשר לנסות שוב.",
+      "network": "אין חיבור. התשובה נשמרה אצלך במכשיר.",
+      "save_failed": "השמירה לשרת לא הצליחה. הטיוטה במקומי בטוחה.",
+      "not_today_prompt": "אפשר לענות רק על השאלה של היום."
+    },
+    "system": {
+      "loading": "רגע",
+      "page_not_found_title": "לא נמצא.",
+      "page_not_found_body": "הדף הזה לא קיים."
+    }
+  }
+}

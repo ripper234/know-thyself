@@ -11,6 +11,9 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/ui_copy.json - canonical Hebrew UI strings the MVP renders (placeholders, button labels, errors)
+- content/ui_copy.schema.json - JSON Schema for content/ui_copy.json
+- scripts/validate_ui_copy.py - validator that enforces design rules on content/ui_copy.json
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
