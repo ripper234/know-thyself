@@ -92,6 +92,12 @@ def main() -> int:
         if not isinstance(text, str) or not text.strip():
             fail(errors, f"{where}.text_he must be a non-empty string")
 
+        # Every prompt must carry a one-line design rationale so future edits
+        # have to think about placement intent, not just text.
+        note = p.get("note")
+        if not isinstance(note, str) or not note.strip():
+            fail(errors, f"{where}.note must be a non-empty string (one-line design rationale)")
+
         # Day 1: no Fear/shame.
         if day == 1 and isinstance(tags, list) and "Fears" in tags:
             fail(errors, "Day 1 must not be Fear-tagged (welcome rule).")

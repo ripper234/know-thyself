@@ -45,14 +45,16 @@
       "seed_id": 11,
       "category": "unique",
       "tags": ["Habits", "Patterns"],
-      "text_he": "מה נעשה אצלך לאחרונה על אוטומט?"
+      "text_he": "מה נעשה אצלך לאחרונה על אוטומט?",
+      "note": "Builds noticing muscle early: surface one automatic pattern without judgment."
     },
     {
       "day": 4,
       "seed_id": 8,
       "category": "unique",
       "tags": ["Identity", "Meaning"],
-      "text_he": "איזה חלק ביום שלך מרגיש הכי אמיתי?"
+      "text_he": "איזה חלק ביום שלך מרגיש הכי אמיתי?",
+      "note": "Positive identity prompt: locate authenticity before the week deepens."
     },
     {
       "day": 5,
@@ -84,14 +86,16 @@
       "seed_id": 17,
       "category": "unique",
       "tags": ["Identity", "Emotions"],
-      "text_he": "מה הפתיע אותך בעצמך החודש?"
+      "text_he": "מה הפתיע אותך בעצמך החודש?",
+      "note": "Day after the first anchor: reflect outward across the past month, still light."
     },
     {
       "day": 9,
       "seed_id": 16,
       "category": "unique",
       "tags": ["Habits", "Patterns"],
-      "text_he": "מה ממשיך להיסחב רק מתוך הרגל?"
+      "text_he": "מה ממשיך להיסחב רק מתוך הרגל?",
+      "note": "Names inertia without blame. Sets up the heavier day-10 prompt."
     },
     {
       "day": 10,
@@ -106,7 +110,8 @@
       "seed_id": 4,
       "category": "unique",
       "tags": ["Values", "Patterns"],
-      "text_he": "לאן הולכת לך אנרגיה על דברים פחות חשובים?"
+      "text_he": "לאן הולכת לך אנרגיה על דברים פחות חשובים?",
+      "note": "Values check after the day-10 jealousy prompt: where attention is leaking."
     },
     {
       "day": 12,
@@ -121,7 +126,8 @@
       "seed_id": 21,
       "category": "unique",
       "tags": ["Habits", "Patterns"],
-      "text_he": "איזה רגע היום ביקש ממך לעצור, ולא עצרת?"
+      "text_he": "איזה רגע היום ביקש ממך לעצור, ולא עצרת?",
+      "note": "Same-day micro-noticing. Lower lift than week-scale prompts, builds presence."
     },
     {
       "day": 14,
@@ -137,35 +143,40 @@
       "seed_id": 2,
       "category": "unique",
       "tags": ["Emotions", "Patterns"],
-      "text_he": "איזה רגע קטן מהשבוע לא יוצא לך מהראש?"
+      "text_he": "איזה רגע קטן מהשבוע לא יוצא לך מהראש?",
+      "note": "Last Fear-free day. Soft emotional surfacing before the deeper second half."
     },
     {
       "day": 16,
       "seed_id": 7,
       "category": "unique",
       "tags": ["Values", "Habits"],
-      "text_he": "על מה נאמר \"אין לי זמן\" כשבעצם אין רצון?"
+      "text_he": "על מה נאמר \"אין לי זמן\" כשבעצם אין רצון?",
+      "note": "First mid-month confrontation prompt: a small honest distinction, still pre-Fear."
     },
     {
       "day": 17,
       "seed_id": 12,
       "category": "unique",
       "tags": ["Identity", "Relationships"],
-      "text_he": "איפה יש נטייה להתקטן כדי שיהיה פשוט יותר?"
+      "text_he": "איפה יש נטייה להתקטן כדי שיהיה פשוט יותר?",
+      "note": "Names a self-shrinking pattern without using Fear tag yet."
     },
     {
       "day": 18,
       "seed_id": 25,
       "category": "evergreen",
       "tags": ["Relationships", "Emotions"],
-      "text_he": "מה קשה לך לתת לעצמך, אבל קל לבקש מאחרים?"
+      "text_he": "מה קשה לך לתת לעצמך, אבל קל לבקש מאחרים?",
+      "note": "Evergreen self-vs-other asymmetry. Lands well in week 3."
     },
     {
       "day": 19,
       "seed_id": 13,
       "category": "unique",
       "tags": ["Emotions", "Patterns"],
-      "text_he": "מה ביקשת מעצמך השבוע שהיה לא הוגן?"
+      "text_he": "מה ביקשת מעצמך השבוע שהיה לא הוגן?",
+      "note": "Self-compassion angle, recasting harshness toward self as something to notice."
     },
     {
       "day": 20,
@@ -189,7 +200,8 @@
       "seed_id": 9,
       "category": "unique",
       "tags": ["Identity", "Relationships"],
-      "text_he": "איזו אמת נאמרת לאחרים, וקשה לך לחיות אותה?"
+      "text_he": "איזו אמת נאמרת לאחרים, וקשה לך לחיות אותה?",
+      "note": "Last day before the descent. Names a private gap between speech and life."
     },
     {
       "day": 23,
@@ -204,14 +216,16 @@
       "seed_id": 19,
       "category": "unique",
       "tags": ["Identity", "Relationships"],
-      "text_he": "איזה אישור עדיין מבוקש, גם כשהוא לא נחוץ?"
+      "text_he": "איזה אישור עדיין מבוקש, גם כשהוא לא נחוץ?",
+      "note": "Descent week: surfaces a residual approval-seeking pattern."
     },
     {
       "day": 25,
       "seed_id": 15,
       "category": "unique",
       "tags": ["Patterns", "Meaning"],
-      "text_he": "איזה מחיר שקט משולם על משהו שנראה \"בסדר\"?"
+      "text_he": "איזה מחיר שקט משולם על משהו שנראה \"בסדר\"?",
+      "note": "Names hidden cost of accepted compromises. Sits between two heavier prompts."
     },
     {
       "day": 26,
@@ -226,7 +240,8 @@
       "seed_id": 18,
       "category": "unique",
       "tags": ["Relationships", "Fears"],
-      "text_he": "מה נשאר אצלך בפנים, אבל לא יוצא החוצה?"
+      "text_he": "מה נשאר אצלך בפנים, אבל לא יוצא החוצה?",
+      "note": "Late-descent prompt: what stays internal, without forcing it out."
     },
     {
       "day": 28,

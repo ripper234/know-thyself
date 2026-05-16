@@ -42,7 +42,7 @@
     "prompt": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["day", "seed_id", "category", "tags", "text_he"],
+      "required": ["day", "seed_id", "category", "tags", "text_he", "note"],
       "properties": {
         "day": {
           "type": "integer",
@@ -76,7 +76,8 @@
         },
         "note": {
           "type": "string",
-          "description": "Editorial note explaining the slot or framing. Not shown to end users."
+          "minLength": 1,
+          "description": "One-line design rationale for why this prompt is in this slot. Required so future edits keep placement intent in view. Not shown to end users."
         }
       }
     }
