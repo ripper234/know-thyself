@@ -11,6 +11,9 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/weekly-reflection.json - canonical Hebrew weekly reflection prompts (week 1 to 4)
+- content/weekly-reflection.schema.json - JSON Schema for content/weekly-reflection.json
+- scripts/validate_weekly_reflection.py - validator for content/weekly-reflection.json
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
