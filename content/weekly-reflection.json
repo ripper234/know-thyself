@@ -1,0 +1,40 @@
+{
+  "$schema": "./weekly-reflection.schema.json",
+  "version": "v1",
+  "language": "he",
+  "description": "Canonical weekly reflection prompts for Know-Thyself v0.1. At the end of each week (after the anchor day in content/prompts.json) the user is invited to write a private synthesis of the week. This file defines the single Hebrew line shown above the weekly reflection textarea for Week 1 through Week 4. See README.md (Weekly Reflection) for the surrounding flow: the user re-reads their daily answers, then writes the weekly synthesis manually. The product never auto-generates a summary from the daily answers.",
+  "design_rules": [
+    "Each weekly prompt is a single Hebrew line. Short enough to read at a glance, broad enough to invite synthesis.",
+    "Tone matches the daily prompts: gender-neutral, calm, non-coaching, no exclamation marks, no thanking or congratulating.",
+    "The weekly prompt invites synthesis across the week, not a new self-disclosure. It points back at what was already written.",
+    "Weekly prompts are paired with the anchor days in content/prompts.json (days 7, 14, 21, 28) so the rhythm is consistent.",
+    "Week 1 is light: the user is still building trust with the practice. Week 4 is deeper: the user has earned the right to a harder synthesis.",
+    "The prompt never implies the user must find a lesson, a pattern, or a 'next step'. Noticing is enough."
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "anchor_day": 7,
+      "text_he": "במבט אחורה על השבוע: מה חוזר?",
+      "note": "Week 1 synthesis. Light, observational. Pairs with day 7 ('איזה דפוס חוזר אצלך?') so the week ends on the same question the day began with, after seven days of evidence."
+    },
+    {
+      "week": 2,
+      "anchor_day": 14,
+      "text_he": "מה הופיע השבוע שלא ציפית לו?",
+      "note": "Week 2 synthesis. Invites the user to name a surprise without judging it. Pairs with day 14 ('מה נותן לך תחושת משמעות גם בלי הכרה?'): the daily prompt anchors meaning, the weekly prompt notices the unexpected."
+    },
+    {
+      "week": 3,
+      "anchor_day": 21,
+      "text_he": "מה השתנה בך מתחילת החודש?",
+      "note": "Week 3 synthesis. Three weeks in, a 'what shifted' question becomes honest. Pairs with day 21 ('מה ידוע לך על עצמך היום שלא היה ידוע לפני שנה?'): yearly horizon on the day, monthly horizon on the week."
+    },
+    {
+      "week": 4,
+      "anchor_day": 28,
+      "text_he": "מה ראית בעצמך החודש שעוד לא נאמר במפורש?",
+      "note": "Week 4 synthesis. End of the descent week. The user has shown up 28 times; the prompt earns the right to name something explicitly. Pairs with day 28 ('מה חשוב לך לשמור בשליטה עכשיו?')."
+    }
+  ]
+}

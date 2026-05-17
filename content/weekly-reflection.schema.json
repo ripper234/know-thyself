@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/ripper234/know-thyself/blob/main/content/weekly-reflection.schema.json",
+  "title": "Know-Thyself Weekly Reflection Prompts",
+  "description": "Canonical schema for content/weekly-reflection.json, the four weekly synthesis prompts shown after anchor days (7, 14, 21, 28) in the v0.1 MVP.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "language", "weeks"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": {
+      "type": "string",
+      "description": "Schema/data version (e.g., v1)."
+    },
+    "language": {
+      "type": "string",
+      "description": "BCP-47 primary language code (e.g., he).",
+      "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)*$"
+    },
+    "description": { "type": "string" },
+    "design_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "weeks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/week" }
+    }
+  },
+  "$defs": {
+    "week": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["week", "anchor_day", "text_he", "note"],
+      "properties": {
+        "week": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based week number in the first 30-day cycle."
+        },
+        "anchor_day": {
+          "type": "integer",
+          "enum": [7, 14, 21, 28],
+          "description": "Anchor day in content/prompts.json this weekly reflection is paired with."
+        },
+        "text_he": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Hebrew weekly reflection prompt. Single line, gender-neutral, no exclamation marks."
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Design rationale for the weekly prompt and the daily anchor it pairs with. Not shown to end users."
+        }
+      }
+    }
+  }
+}
