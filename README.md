@@ -54,8 +54,8 @@ Every page is a question (from a fixed pre-generated and curated list of daily q
 Users can start answering before signup.
 Answers are treated as a **local draft** until finalized.
 To keep an answer, the user must log in.
-The primary action button is **“Finalize”**. (TODO - "submit"? Something else?)
-The answer input includes a one-time placeholder text inviting writing and signaling privacy (copy TBD).
+The primary action button is labeled **“סיימתי”** in Hebrew ("I'm done"). It maps to the English concept *Finalize*, not *Submit*: the act is closing the day's writing, not handing it in. The button label is canonical and lives in `content/ui_copy.json` (`prompt.finalize_button`).
+The answer input shows a one-time placeholder: **“זה רק בינך לבין עצמך. כתוב בכנות.”** ("This is just between you and yourself. Write honestly."). It signals privacy and invites writing in one line. The placeholder is canonical and lives in `content/ui_copy.json` (`prompt.answer_placeholder`).
 
 Principle: A user can only answer TODAY's question, they cannot save answers to past questions.
 (This encourages daily presence — the core practice.)
