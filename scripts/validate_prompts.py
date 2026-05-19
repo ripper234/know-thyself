@@ -3,12 +3,18 @@
 
 Stdlib only. Run from repo root:
 
-    python3 scripts/validate_prompts.py
+    python3 scripts/validate_prompts.py           # validate only
+    python3 scripts/validate_prompts.py --summary  # validate + day-by-day overview
 
 Exits non-zero if any rule fails. Intended for CI and local use.
+
+The --summary mode prints a one-line-per-day review aid so a human reviewer
+can scan all 30 prompts (day, category, tags, anchor flag, prompt text)
+without reading raw JSON.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -37,7 +43,9 @@ def fail(errors: list[str], msg: str) -> None:
     errors.append(msg)
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+
     if not PROMPTS_PATH.exists():
         print(f"FAIL: {PROMPTS_PATH} not found", file=sys.stderr)
         return 1
@@ -147,7 +155,43 @@ def main() -> int:
         return 1
 
     print(f"OK: {PROMPTS_PATH.relative_to(REPO_ROOT)} -- {len(prompts)} prompts, all rules pass.")
+
+    if args.summary:
+        print_summary(data, prompts)
+
     return 0
+
+
+def print_summary(data: dict, prompts: list[dict]) -> None:
+    """Print a day-by-day review aid.
+
+    Format per day: ``DD  cat   anchor?  [Tag1,Tag2]   text_he``
+
+    Ordered by day. Anchor days (7, 14, 21, 28) are marked with a star.
+    """
+    print()
+    print(f"Day-by-day overview  (language={data.get('language')}, version={data.get('version')})")
+    print("-" * 78)
+    by_day = sorted(prompts, key=lambda p: p.get("day", 0))
+    for p in by_day:
+        day = p.get("day", "?")
+        cat = p.get("category", "?")[:9]
+        anchor = " *" if p.get("anchor_day") else "  "
+        tags = ",".join(p.get("tags", []))
+        text = p.get("text_he", "")
+        print(f"  {day:>2}  {cat:<9}{anchor}  [{tags:<25}]  {text}")
+    print("-" * 78)
+    print("  * = anchor day (paired with weekly reflection)")
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--summary",
+        action="store_true",
+        help="After validation, print a day-by-day overview of all prompts.",
+    )
+    return parser.parse_args(argv)
 
 
 if __name__ == "__main__":
