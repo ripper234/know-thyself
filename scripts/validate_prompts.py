@@ -5,12 +5,16 @@ Stdlib only. Run from repo root:
 
     python3 scripts/validate_prompts.py           # validate only
     python3 scripts/validate_prompts.py --summary  # validate + day-by-day overview
+    python3 scripts/validate_prompts.py --prompts <path>  # validate a specific file
 
 Exits non-zero if any rule fails. Intended for CI and local use.
 
 The --summary mode prints a one-line-per-day review aid so a human reviewer
 can scan all 30 prompts (day, category, tags, anchor flag, prompt text)
 without reading raw JSON.
+
+The --prompts flag lets tests (scripts/test_validate_prompts.py) point the
+validator at a mutated copy of the prompts file without touching the real one.
 """
 from __future__ import annotations
 
@@ -46,11 +50,13 @@ def fail(errors: list[str], msg: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
 
-    if not PROMPTS_PATH.exists():
-        print(f"FAIL: {PROMPTS_PATH} not found", file=sys.stderr)
+    prompts_path = Path(args.prompts) if args.prompts else PROMPTS_PATH
+
+    if not prompts_path.exists():
+        print(f"FAIL: {prompts_path} not found", file=sys.stderr)
         return 1
 
-    data = json.loads(PROMPTS_PATH.read_text(encoding="utf-8"))
+    data = json.loads(prompts_path.read_text(encoding="utf-8"))
     errors: list[str] = []
 
     if data.get("language") != "he":
@@ -154,7 +160,11 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  - {e}", file=sys.stderr)
         return 1
 
-    print(f"OK: {PROMPTS_PATH.relative_to(REPO_ROOT)} -- {len(prompts)} prompts, all rules pass.")
+    try:
+        shown = prompts_path.relative_to(REPO_ROOT)
+    except ValueError:
+        shown = prompts_path
+    print(f"OK: {shown} -- {len(prompts)} prompts, all rules pass.")
 
     if args.summary:
         print_summary(data, prompts)
@@ -190,6 +200,15 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--summary",
         action="store_true",
         help="After validation, print a day-by-day overview of all prompts.",
+    )
+    parser.add_argument(
+        "--prompts",
+        default=None,
+        help=(
+            "Path to a prompts JSON file to validate. Defaults to "
+            "content/prompts.json relative to the repo root. Used by the test "
+            "suite to point at mutated copies."
+        ),
     )
     return parser.parse_args(argv)
 
