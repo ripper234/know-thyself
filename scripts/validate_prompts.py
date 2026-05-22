@@ -106,6 +106,14 @@ def main(argv: list[str] | None = None) -> int:
         if not isinstance(text, str) or not text.strip():
             fail(errors, f"{where}.text_he must be a non-empty string")
 
+        # text_en is the English gloss used for review and tooling. It is
+        # required so non-Hebrew reviewers and CI can read the file end-to-end
+        # without having to translate every prompt by hand. It is NOT shown
+        # to end users; the live UX renders text_he.
+        text_en = p.get("text_en")
+        if not isinstance(text_en, str) or not text_en.strip():
+            fail(errors, f"{where}.text_en must be a non-empty string (English gloss for review)")
+
         # Every prompt must carry a one-line design rationale so future edits
         # have to think about placement intent, not just text.
         note = p.get("note")
@@ -175,7 +183,12 @@ def main(argv: list[str] | None = None) -> int:
 def print_summary(data: dict, prompts: list[dict]) -> None:
     """Print a day-by-day review aid.
 
-    Format per day: ``DD  cat   anchor?  [Tag1,Tag2]   text_he``
+    Format per day: ``DD  cat   anchor?  [Tag1,Tag2]   text_en``
+
+    The English gloss is used here (not text_he) because the summary is for
+    review by humans and tooling that may not read Hebrew. Terminals also
+    render LTR English more reliably than RTL Hebrew in mixed-direction
+    columns. The live UX still serves text_he.
 
     Ordered by day. Anchor days (7, 14, 21, 28) are marked with a star.
     """
@@ -188,10 +201,11 @@ def print_summary(data: dict, prompts: list[dict]) -> None:
         cat = p.get("category", "?")[:9]
         anchor = " *" if p.get("anchor_day") else "  "
         tags = ",".join(p.get("tags", []))
-        text = p.get("text_he", "")
+        text = p.get("text_en") or p.get("text_he", "")
         print(f"  {day:>2}  {cat:<9}{anchor}  [{tags:<25}]  {text}")
     print("-" * 78)
     print("  * = anchor day (paired with weekly reflection)")
+    print("  text shown above is the English gloss (text_en); live UX uses text_he")
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:

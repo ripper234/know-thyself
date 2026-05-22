@@ -183,6 +183,19 @@ def case_missing_note() -> tuple[Mutator, bool, str]:
     return mutate, False, "missing design-rationale note is rejected"
 
 
+def case_missing_text_en() -> tuple[Mutator, bool, str]:
+    def mutate(d: dict[str, Any]) -> None:
+        # text_en is the English gloss used for review and tooling. It must
+        # be present and non-blank on every prompt so non-Hebrew reviewers
+        # and CI can read the file end-to-end.
+        for p in d["prompts"]:
+            if p["day"] == 9:
+                p["text_en"] = "   "
+                break
+
+    return mutate, False, "blank text_en is rejected"
+
+
 def case_anchor_day_unmarked() -> tuple[Mutator, bool, str]:
     def mutate(d: dict[str, Any]) -> None:
         # Day 14 is an anchor day; clear the flag.
@@ -227,6 +240,7 @@ CASES: list[Callable[[], tuple[Mutator, bool, str]]] = [
     case_too_many_tags,
     case_empty_text,
     case_missing_note,
+    case_missing_text_en,
     case_anchor_day_unmarked,
     case_non_anchor_day_marked,
     case_wrong_prompt_count,

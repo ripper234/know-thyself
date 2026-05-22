@@ -42,7 +42,7 @@
     "prompt": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["day", "seed_id", "category", "tags", "text_he", "note"],
+      "required": ["day", "seed_id", "category", "tags", "text_he", "text_en", "note"],
       "properties": {
         "day": {
           "type": "integer",
@@ -68,7 +68,12 @@
         "text_he": {
           "type": "string",
           "minLength": 1,
-          "description": "Hebrew prompt text. Must be gender-neutral."
+          "description": "Hebrew prompt text. Must be gender-neutral. This is the live, user-facing string."
+        },
+        "text_en": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English gloss of text_he, for review and tooling. NOT shown to end users. Should preserve meaning and stay gender-neutral."
         },
         "anchor_day": {
           "type": "boolean",
