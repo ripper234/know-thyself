@@ -15,6 +15,7 @@ Directory Structure
 - content/prompts.schema.json - JSON Schema for content/prompts.json
 - scripts/validate_prompts.py - validator that enforces design rules on content/prompts.json
 - scripts/test_validate_prompts.py - negative-case tests that lock the validator's rules against silent regression
+- scripts/render_preview.py - renders content/prompts.json to a self-contained Hebrew RTL preview.html for human review (generated, gitignored)
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 

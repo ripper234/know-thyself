@@ -1,3 +1,6 @@
 # Python bytecode caches from running scripts/ tools locally
 __pycache__/
 *.pyc
+
+# Generated preview output from scripts/render_preview.py (review aid, not source)
+/preview.html
