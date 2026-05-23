@@ -1,0 +1,46 @@
+name: Validate prompts.json
+
+# Locks the day-1-to-30 design rules at CI level, not just on paper.
+# Runs on every push/PR that touches the canonical content or its tooling.
+# Stdlib-only, no install step needed -- ~5s runtime.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/prompts.json"
+      - "content/prompts.schema.json"
+      - "scripts/validate_prompts.py"
+      - "scripts/test_validate_prompts.py"
+      - ".github/workflows/validate-prompts.yml"
+  pull_request:
+    paths:
+      - "content/prompts.json"
+      - "content/prompts.schema.json"
+      - "scripts/validate_prompts.py"
+      - "scripts/test_validate_prompts.py"
+      - ".github/workflows/validate-prompts.yml"
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    name: Validate canonical prompts and run rule tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate content/prompts.json against design rules
+        run: python3 scripts/validate_prompts.py
+
+      - name: Run validator rule tests (negative cases)
+        run: python3 scripts/test_validate_prompts.py
+
+      - name: Print review summary (informational)
+        if: always()
+        run: python3 scripts/validate_prompts.py --summary || true

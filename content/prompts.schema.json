@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/ripper234/know-thyself/blob/main/content/prompts.schema.json",
+  "title": "Know-Thyself Prompts",
+  "description": "Canonical schema for content/prompts.json, the machine-readable day-by-day prompt list for the v0.1 MVP.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "language", "prompts"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": {
+      "type": "string",
+      "description": "Schema/data version (e.g., v1)."
+    },
+    "language": {
+      "type": "string",
+      "description": "BCP-47 primary language code (e.g., he).",
+      "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)*$"
+    },
+    "description": { "type": "string" },
+    "design_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tag_vocabulary": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "category_vocabulary": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "prompts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/prompt" }
+    }
+  },
+  "$defs": {
+    "prompt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["day", "seed_id", "category", "tags", "text_he", "text_en", "note"],
+      "properties": {
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based day index in the sequence."
+        },
+        "seed_id": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Stable id from the seed bank catalog."
+        },
+        "category": {
+          "type": "string",
+          "enum": ["unique", "evergreen"]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "type": "string" }
+        },
+        "text_he": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Hebrew prompt text. Must be gender-neutral. This is the live, user-facing string."
+        },
+        "text_en": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English gloss of text_he, for review and tooling. NOT shown to end users. Should preserve meaning and stay gender-neutral."
+        },
+        "anchor_day": {
+          "type": "boolean",
+          "description": "True for anchor days (7, 14, 21, 28) that pair with the weekly reflection."
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One-line design rationale for why this prompt is in this slot. Required so future edits keep placement intent in view. Not shown to end users."
+        }
+      }
+    }
+  }
+}

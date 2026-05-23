@@ -11,6 +11,11 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/prompts.json - canonical machine-readable day 1 to 30 prompt list (loaded by the MVP)
+- content/prompts.schema.json - JSON Schema for content/prompts.json
+- scripts/validate_prompts.py - validator that enforces design rules on content/prompts.json
+- scripts/test_validate_prompts.py - negative-case tests that lock the validator's rules against silent regression
+- scripts/render_preview.py - renders content/prompts.json to a self-contained Hebrew RTL preview.html for human review (generated, gitignored)
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
@@ -74,9 +79,9 @@ Conducive to sharing it on Facebook.
 Leaderboard
 ----------
 The metric is presence.
-2 Leaderboards
-- Username / Total Days
-- Username / Streak
+2 private progress counters
+- Total Days Submitted
+- Current Streak
 
 *Definition*
 Presence = user clicks “Finalize” on TODAY’s question.

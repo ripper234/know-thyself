@@ -1,0 +1,302 @@
+{
+  "$schema": "./prompts.schema.json",
+  "version": "v1",
+  "language": "he",
+  "description": "Canonical machine-readable prompt list for Know-Thyself v0.1. The MVP app (ARCHITECTURE.md) loads this file at build/runtime and serves day[i] on day i since launch. Source-of-truth for both prompt text and day-1-to-30 sequence. Markdown counterparts (prompts-hebrew-seed-bank-v1.md, sequence-30-day.md) are human-readable views of the same data. Every prompt carries text_he (the live, user-facing Hebrew) plus text_en (an English gloss for review and tooling; NOT shown to users).",
+  "design_rules": [
+    "Day 1 is light and welcoming. No fear or shame on the first day.",
+    "Days 1 to 15 avoid Fear-tagged prompts. Trust first.",
+    "Days 23 to 30 are the intentional descent. Fear and identity-edge prompts cluster here, on purpose.",
+    "Anchor days (7, 14, 21, 28) pair with the weekly reflection.",
+    "Day 30 is forward-facing, pointing into month 2 rather than just looking back.",
+    "Every prompt is gender-neutral Hebrew: no gendered pronouns or verb forms.",
+    "Every prompt should be answerable in 2 to 3 minutes."
+  ],
+  "tag_vocabulary": [
+    "Identity",
+    "Patterns",
+    "Emotions",
+    "Habits",
+    "Values",
+    "Relationships",
+    "Fears",
+    "Meaning"
+  ],
+  "category_vocabulary": ["unique", "evergreen"],
+  "prompts": [
+    {
+      "day": 1,
+      "seed_id": 24,
+      "category": "evergreen",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "מתי הכי נוח לך בתוך עצמך?",
+      "text_en": "When are you most at ease inside yourself?",
+      "note": "Day 1: soft, inviting, no shame."
+    },
+    {
+      "day": 2,
+      "seed_id": 3,
+      "category": "unique",
+      "tags": ["Identity", "Habits"],
+      "text_he": "מה נהיה קל יותר בשבילך לאחרונה?",
+      "text_en": "What has become easier for you lately?",
+      "note": "Positive momentum on day 2."
+    },
+    {
+      "day": 3,
+      "seed_id": 11,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "מה נעשה אצלך לאחרונה על אוטומט?",
+      "text_en": "What have you been doing on autopilot lately?",
+      "note": "Builds noticing muscle early: surface one automatic pattern without judgment."
+    },
+    {
+      "day": 4,
+      "seed_id": 8,
+      "category": "unique",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "איזה חלק ביום שלך מרגיש הכי אמיתי?",
+      "text_en": "Which part of your day feels the most real?",
+      "note": "Positive identity prompt: locate authenticity before the week deepens."
+    },
+    {
+      "day": 5,
+      "seed_id": 10,
+      "category": "unique",
+      "tags": ["Emotions", "Values"],
+      "text_he": "איזה צורך שלך קיבל הכי מעט מקום השבוע?",
+      "text_en": "Which of your needs got the least room this week?",
+      "note": "Opens emotion register gently."
+    },
+    {
+      "day": 6,
+      "seed_id": 22,
+      "category": "evergreen",
+      "tags": ["Values", "Identity"],
+      "text_he": "מה באמת חשוב לך יותר ממה שנראה כלפי חוץ?",
+      "text_en": "What really matters to you more than how it looks from the outside?",
+      "note": "First values prompt, anchor before weekly."
+    },
+    {
+      "day": 7,
+      "seed_id": 23,
+      "category": "evergreen",
+      "tags": ["Patterns"],
+      "text_he": "איזה דפוס חוזר אצלך?",
+      "text_en": "Which pattern keeps repeating in you?",
+      "anchor_day": true,
+      "note": "Anchor day. Pairs with the first weekly reflection."
+    },
+    {
+      "day": 8,
+      "seed_id": 17,
+      "category": "unique",
+      "tags": ["Identity", "Emotions"],
+      "text_he": "מה הפתיע אותך בעצמך החודש?",
+      "text_en": "What surprised you about yourself this month?",
+      "note": "Day after the first anchor: reflect outward across the past month, still light."
+    },
+    {
+      "day": 9,
+      "seed_id": 16,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "מה ממשיך להיסחב רק מתוך הרגל?",
+      "text_en": "What keeps dragging on only out of habit?",
+      "note": "Names inertia without blame. Sets up the heavier day-10 prompt."
+    },
+    {
+      "day": 10,
+      "seed_id": 14,
+      "category": "unique",
+      "tags": ["Emotions", "Values"],
+      "text_he": "מתי הרגשת קנאה, ועל מה היא הצביעה?",
+      "text_en": "When did you feel jealousy, and what did it point to?",
+      "note": "First heavier prompt: jealousy as signal."
+    },
+    {
+      "day": 11,
+      "seed_id": 4,
+      "category": "unique",
+      "tags": ["Values", "Patterns"],
+      "text_he": "לאן הולכת לך אנרגיה על דברים פחות חשובים?",
+      "text_en": "Where is your energy going on things that matter less?",
+      "note": "Values check after the day-10 jealousy prompt: where attention is leaking."
+    },
+    {
+      "day": 12,
+      "seed_id": 27,
+      "category": "evergreen",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "איזה הרגל עוזר לך, ואיזה רק מרגיע אותך?",
+      "text_en": "Which habit helps you, and which only soothes you?",
+      "note": "Help-vs-comfort distinction."
+    },
+    {
+      "day": 13,
+      "seed_id": 21,
+      "category": "unique",
+      "tags": ["Habits", "Patterns"],
+      "text_he": "איזה רגע היום ביקש ממך לעצור, ולא עצרת?",
+      "text_en": "Which moment today asked you to pause, and you didn't?",
+      "note": "Same-day micro-noticing. Lower lift than week-scale prompts, builds presence."
+    },
+    {
+      "day": 14,
+      "seed_id": 28,
+      "category": "evergreen",
+      "tags": ["Meaning", "Values"],
+      "text_he": "מה נותן לך תחושת משמעות גם בלי הכרה?",
+      "text_en": "What gives you a sense of meaning even without recognition?",
+      "anchor_day": true,
+      "note": "Anchor day. Meaning without recognition."
+    },
+    {
+      "day": 15,
+      "seed_id": 2,
+      "category": "unique",
+      "tags": ["Emotions", "Patterns"],
+      "text_he": "איזה רגע קטן מהשבוע לא יוצא לך מהראש?",
+      "text_en": "Which small moment from this week keeps coming back to you?",
+      "note": "Last Fear-free day. Soft emotional surfacing before the deeper second half."
+    },
+    {
+      "day": 16,
+      "seed_id": 7,
+      "category": "unique",
+      "tags": ["Values", "Habits"],
+      "text_he": "על מה נאמר \"אין לי זמן\" כשבעצם אין רצון?",
+      "text_en": "About what do you say \"I have no time\" when really it's that you don't want to?",
+      "note": "First mid-month confrontation prompt: a small honest distinction, still pre-Fear."
+    },
+    {
+      "day": 17,
+      "seed_id": 12,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איפה יש נטייה להתקטן כדי שיהיה פשוט יותר?",
+      "text_en": "Where is there a tendency to make yourself smaller just to keep things simple?",
+      "note": "Names a self-shrinking pattern without using Fear tag yet."
+    },
+    {
+      "day": 18,
+      "seed_id": 25,
+      "category": "evergreen",
+      "tags": ["Relationships", "Emotions"],
+      "text_he": "מה קשה לך לתת לעצמך, אבל קל לבקש מאחרים?",
+      "text_en": "What is hard for you to give yourself, yet easy to ask of others?",
+      "note": "Evergreen self-vs-other asymmetry. Lands well in week 3."
+    },
+    {
+      "day": 19,
+      "seed_id": 13,
+      "category": "unique",
+      "tags": ["Emotions", "Patterns"],
+      "text_he": "מה ביקשת מעצמך השבוע שהיה לא הוגן?",
+      "text_en": "What did you ask of yourself this week that was unfair?",
+      "note": "Self-compassion angle, recasting harshness toward self as something to notice."
+    },
+    {
+      "day": 20,
+      "seed_id": 20,
+      "category": "unique",
+      "tags": ["Identity", "Meaning"],
+      "text_he": "מה כבר לא מתאים לך עכשיו?",
+      "text_en": "What no longer fits you now?",
+      "note": "Preps for end-of-month."
+    },
+    {
+      "day": 21,
+      "seed_id": 29,
+      "category": "evergreen",
+      "tags": ["Identity", "Patterns"],
+      "text_he": "מה ידוע לך על עצמך היום שלא היה ידוע לפני שנה?",
+      "text_en": "What do you know about yourself today that you didn't a year ago?",
+      "anchor_day": true,
+      "note": "Anchor day. Year-over-year identity."
+    },
+    {
+      "day": 22,
+      "seed_id": 9,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איזו אמת נאמרת לאחרים, וקשה לך לחיות אותה?",
+      "text_en": "Which truth do you tell others, but find hard to live yourself?",
+      "note": "Last day before the descent. Names a private gap between speech and life."
+    },
+    {
+      "day": 23,
+      "seed_id": 5,
+      "category": "unique",
+      "tags": ["Fears", "Habits"],
+      "text_he": "מה ממשיך להידחות מסיבה שכבר לא רלוונטית?",
+      "text_en": "What keeps getting postponed for a reason that no longer applies?",
+      "note": "Start of the intentional descent. First Fear-tagged prompt."
+    },
+    {
+      "day": 24,
+      "seed_id": 19,
+      "category": "unique",
+      "tags": ["Identity", "Relationships"],
+      "text_he": "איזה אישור עדיין מבוקש, גם כשהוא לא נחוץ?",
+      "text_en": "Whose approval do you still seek, even when you don't need it?",
+      "note": "Descent week: surfaces a residual approval-seeking pattern."
+    },
+    {
+      "day": 25,
+      "seed_id": 15,
+      "category": "unique",
+      "tags": ["Patterns", "Meaning"],
+      "text_he": "איזה מחיר שקט משולם על משהו שנראה \"בסדר\"?",
+      "text_en": "What quiet price are you paying for something that looks \"fine\"?",
+      "note": "Names hidden cost of accepted compromises. Sits between two heavier prompts."
+    },
+    {
+      "day": 26,
+      "seed_id": 26,
+      "category": "evergreen",
+      "tags": ["Fears", "Identity"],
+      "text_he": "מה מפחיד אותך לאבד, ומה זה אומר עליך?",
+      "text_en": "What are you afraid to lose, and what does that say about you?",
+      "note": "Heaviest evergreen, well-spaced."
+    },
+    {
+      "day": 27,
+      "seed_id": 18,
+      "category": "unique",
+      "tags": ["Relationships", "Fears"],
+      "text_he": "מה נשאר אצלך בפנים, אבל לא יוצא החוצה?",
+      "text_en": "What stays inside you, but doesn't come out?",
+      "note": "Late-descent prompt: what stays internal, without forcing it out."
+    },
+    {
+      "day": 28,
+      "seed_id": 6,
+      "category": "unique",
+      "tags": ["Fears", "Patterns"],
+      "text_he": "מה חשוב לך לשמור בשליטה עכשיו?",
+      "text_en": "What do you want to keep under control right now?",
+      "anchor_day": true,
+      "note": "Anchor day. Only anchor day with a heavier prompt, intentional as the user enters the closing week."
+    },
+    {
+      "day": 29,
+      "seed_id": 30,
+      "category": "evergreen",
+      "tags": ["Fears", "Identity"],
+      "text_he": "מה נשאר מוסתר גם מעצמך?",
+      "text_en": "What remains hidden even from yourself?",
+      "note": "Closing depth."
+    },
+    {
+      "day": 30,
+      "seed_id": 1,
+      "category": "unique",
+      "tags": ["Identity", "Patterns"],
+      "text_he": "מה כבר ברור לך, אבל עוד לא נאמר בקול?",
+      "text_en": "What is already clear to you, but hasn't been said out loud yet?",
+      "note": "Forward-facing into month 2."
+    }
+  ]
+}
