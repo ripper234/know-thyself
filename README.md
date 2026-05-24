@@ -12,7 +12,7 @@ Directory Structure
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
 - marketing/blog/ - draft blog posts
-- research/ - GPT research and references
+- research/ - GPT research and references (see [research/insights.md](research/insights.md) for the decision-ready distillation)
 
 First Principles
 ----------------
@@ -163,7 +163,7 @@ TODO
 2. Cleanup this readme
 2. A. Move remaining TODOs to issues — partially done, continuing via tiny-pr-bot
 2. B. General refactor
-3. Process /research folder and extract insights/issues.
+3. Process /research folder and extract insights/issues. → first pass in [research/insights.md](research/insights.md) (5 decisions, 4 risks)
 4. ~~Generate candidate first 30 questions.~~ → tracked in [#21](https://github.com/ripper234/know-thyself/issues/21) + [#25](https://github.com/ripper234/know-thyself/issues/25) (BLOCKING)
 5. Should the game pivot to or include elements of [Nomic](https://en.wikipedia.org/wiki/Nomic)? Perhaps with some AI players? It's an entirely different game. But maybe it can retain a simple core for people who just want to answer questions. Not for v0.
 
