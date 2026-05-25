@@ -11,6 +11,7 @@ Directory Structure
 -------------------
 - README.md - main entry point
 - content/guidelines.md - guidelines to generating content
+- content/sharing.md - sharing format spec (OG image, payload, what is shared vs private)
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
 
@@ -66,7 +67,7 @@ A user can favorite (star) specific questions (from others & their own). They ca
 
 Sharing never includes answer content. Shared posts include the question and the unique question graphics. We let the user add their own thoughts (or not).
 
-TODO - should the full text of the question be posted, or just a teaser - enough to make users click?
+Shared posts include the **full question text** (not a teaser) plus a per-prompt OG image. See [content/sharing.md](content/sharing.md) for the full sharing spec (payload, OG image rules, standing line, what is never shared).
 
 Every question has a unique image generated that captures the essence of the question in a unique way.
 Conducive to sharing it on Facebook.
