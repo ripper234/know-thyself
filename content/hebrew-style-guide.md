@@ -45,20 +45,51 @@ Soft limits:
 
 If a prompt needs too much framing, it is probably two prompts.
 
-## Gender Strategy
+## Active Voice + Dotted Gender (canonical rule)
 
-- Hebrew becomes clunky fast when prompts force masculine/feminine forms.
-- Default preference: write prompts that stay natural **without gendered verb forms** when possible.
-- Ask for gender at onboarding (זכר/נקבה/אחר).
-- Always store a gender neutral version of the prompt. Can adjust on runtime to the correct gender if known.
+This is the load-bearing rule for Hebrew prompts.
 
-Prefer:
-- "מה קשה לך לבקש?"
-- Can use specific gender if known
-- If unknown, "איפה את.ה מרגיש.ה הכי חי?" using dots inside words
+**Rule**: prefer the **active second-person form** addressed to the reader. When the verb form differs by gender, write it once in the **dotted canonical form** (`את.ה`, verb.ת / verb.ה).
 
-Avoid awkward forced neutrality that sounds bureaucratic.
-Naturalness wins.
+Why this matters:
+- Active form preserves agency. The reader is the doer, not the recipient.
+- Passive Hebrew ("מה נדחה?", "מה נאמר?", "מה משולם?") sounds therapeutic, observational, or evasive. It pulls the reader away from themselves.
+- The dotted form keeps the canonical text editable as one string, while letting the app render a clean gendered form at runtime when the user's gender is known.
+
+Examples:
+
+Prefer (active + dotted):
+- ✅ `מה את.ה דוחה?`
+- ✅ `על מה את.ה אומר.ת "אין לי זמן"?`
+- ✅ `איזה אישור את.ה עדיין מבקש.ת?`
+- ✅ `איפה את.ה מרגיש.ה הכי חי.ה?`
+
+Avoid (passive / impersonal hedge):
+- ❌ `מה נדחה אצלך?`
+- ❌ `על מה נאמר "אין לי זמן"?`
+- ❌ `איזה אישור עדיין מבוקש?`
+- ❌ `איפה יש נטייה להיסגר?`
+
+When the subject of the question is **not** the reader, no dotted form is needed:
+- `איזה חלק ביום שלך מרגיש הכי אמיתי?` (subject = החלק)
+- `איזה צורך שלך קיבל הכי מעט מקום השבוע?` (subject = הצורך)
+- `מה הפתיע אותך בעצמך החודש?` (subject = מה)
+
+When the verb form is **identical for masc and fem in unvocalized Hebrew** (most past-tense second-person singular forms: `אמרת`, `ביקשת`, `הרגשת`, `עצרת`, `ידעת`), no dots are needed.
+
+When `לך` dative phrasing reads naturally and is not a passive hedge, it is fine:
+- `מה קשה לך לבקש?`
+- `לאן הולכת לך אנרגיה על דברים פחות חשובים?`
+
+## Runtime Resolution
+
+The dotted canonical form is the **stored** prompt. The app resolves it before rendering:
+
+- If gender known and masc: drop `.ה` / `.ת` segments → `אתה מבקש`
+- If gender known and fem: replace dotted segment with fem suffix → `את מבקשת`
+- If gender unknown or non-binary: render the dotted form as-is (`את.ה מבקש.ת`)
+
+Onboarding asks: זכר / נקבה / אחר.
 
 ## Vocabulary Boundaries
 
@@ -76,8 +107,8 @@ Prefer words from ordinary life:
 Prefer concrete language over abstraction.
 
 Prefer:
-- "מה נדחה אצלך?"
-- "איפה יש נטייה להיסגר?"
+- "מה את.ה דוחה?"
+- "איפה את.ה נוטה להיסגר?"
 - "מה נהיה קל יותר?"
 
 Avoid:
@@ -111,7 +142,7 @@ Prefer:
 
 ## Prompt Patterns That Usually Work
 
-Useful shapes:
+Useful shapes (all active, second-person):
 - What are you avoiding / allowing / noticing?
 - Where do you feel friction / ease / truth / performance?
 - Which pattern / tradeoff / need is active right now?
@@ -135,7 +166,8 @@ Before adding a prompt to the bank, ask:
 3. Is it short enough?
 4. Is it concrete enough?
 5. Does it avoid therapy / guru / cliché energy?
-6. Could Ron answer it in under 3 minutes?
-7. Does it create self-clarity rather than pressure?
+6. **Is it active? If the reader is the doer, is the verb in active second-person (with `את.ה verb.ת/ה` form where needed)?**
+7. Could Ron answer it in under 3 minutes?
+8. Does it create self-clarity rather than pressure?
 
 If two people can read it aloud and it still sounds natural, it is probably in-bounds.
