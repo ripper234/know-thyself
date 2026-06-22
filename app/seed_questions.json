@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "text_he": "מה אתה מעמיד פנים שאינך יודע כרגע?",
+    "tags": ["Identity", "Patterns"],
+    "type": "unique",
+    "deep_dive_he": ""
+  },
+  {
+    "id": 2,
+    "text_he": "מה השתנה בך השנה שעדיין לא הכרת בו?",
+    "tags": ["Identity"],
+    "type": "unique",
+    "deep_dive_he": ""
+  },
+  {
+    "id": 3,
+    "text_he": "למה אכפת לך יותר ממה שאתה מודה?",
+    "tags": ["Values"],
+    "type": "evergreen",
+    "deep_dive_he": ""
+  },
+  {
+    "id": 4,
+    "text_he": "איזה דפוס חוזר על עצמו שוב ושוב בחייך?",
+    "tags": ["Patterns"],
+    "type": "evergreen",
+    "deep_dive_he": ""
+  }
+]
