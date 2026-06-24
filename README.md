@@ -10,6 +10,7 @@ GPT, when present, plays a minor reflective role only.
 Directory Structure
 -------------------
 - README.md - main entry point
+- ARCHITECTURE.md - MVP technical spec and stack decisions
 - content/guidelines.md - guidelines to generating content
 - marketing/blog/ - draft blog posts
 - research/ - GPT research and references
@@ -74,9 +75,9 @@ Conducive to sharing it on Facebook.
 Leaderboard
 ----------
 The metric is presence.
-2 Leaderboards
-- Username / Total Days
-- Username / Streak
+2 private progress counters
+- Total Days Submitted
+- Current Streak
 
 *Definition*
 Presence = user clicks “Finalize” on TODAY’s question.
